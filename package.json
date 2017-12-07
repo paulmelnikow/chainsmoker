@@ -1,0 +1,49 @@
+{
+  "name": "chainsmoker",
+  "description": "Boolean minimatch for lists of file paths, designed for Danger",
+  "author": "Paul Melnikow",
+  "keywords": [
+    "minimatch",
+    "chained",
+    "chain",
+    "path",
+    "matching",
+    "danger",
+    "danger-js",
+    "dangerfile"
+  ],
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint '*.js'",
+    "test:js": "mocha spec.js",
+    "test": "npm run lint && npm run test:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:paulmelnikow/chainsmoker.git"
+  },
+  "homepage": "https://github.com/paulmelnikow/chainsmoker",
+  "bugs": "https://github.com/paulmelnikow/chainsmoker/issues",
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "prettier": "1.7.4",
+    "sazerac": "^0.4.2"
+  },
+  "engines": {
+    "node": ">= 8.x"
+  },
+  "dependencies": {
+    "lodash.mapvalues": "^4.6.0",
+    "minimatch": "^3.0.4"
+  }
+}
