@@ -89,14 +89,14 @@ Support
 If you are having issues, please let me know.
 
 
-The name
---------
+The name :smoking:
+------------------
 
 The name was inspired by the idea of a chainable file-set object using
 minimatch. It's also for Danger… maybe that was part of the inspiration.
 
 I ended up with something simpler that doesn't rely on chaining, though I kept
-the name. :smoking:
+the name.
 
 
 License
