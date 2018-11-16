@@ -2,7 +2,6 @@ env:
   mocha: true
 
 plugins:
-  - "prettier"
   - "mocha"
 
 extends:
@@ -15,8 +14,6 @@ parserOptions:
   sourceType: "script"
 
 rules:
-  prettier/prettier: "error"
-
   # Disable some rules from eslint:recommended.
   no-empty: ["error", { "allowEmptyCatch": true }]
   # Allow unused parameters. In callbacks, removing them seems to obscure
