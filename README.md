@@ -1,6 +1,16 @@
 chainsmoker
 ===========
 
+[![version](https://img.shields.io/npm/v/chainsmoker.svg?style=flat-square)][npm]
+[![license](https://img.shields.io/npm/l/chainsmoker.svg?style=flat-square)][npm]
+[![build](https://img.shields.io/circleci/project/github/paulmelnikow/chainsmoker.svg?style=flat-square)][build]
+[![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)][prettier]
+
+[npm]: https://npmjs.com/chainsmoker/
+[build]: https://circleci.com/gh/paulmelnikow/chainsmoker/tree/master
+[prettier]: https://prettier.io/
+[lerna]: https://lernajs.io/
+
 Boolean [minimatch][] for lists of file paths.
 
 Safer and more concise than using `.filter()` and `.length`.
