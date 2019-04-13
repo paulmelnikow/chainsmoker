@@ -1,5 +1,4 @@
-chainsmoker
-===========
+# chainsmoker
 
 [![version](https://img.shields.io/npm/v/chainsmoker.svg?style=flat-square)][npm]
 [![license](https://img.shields.io/npm/l/chainsmoker.svg?style=flat-square)][npm]
@@ -19,11 +18,9 @@ Designed for concise syntax in [dangerfiles][danger] but not tied to them in
 any way.
 
 [minimatch]: https://github.com/isaacs/minimatch
-[Danger]: http://danger.systems/js/
+[danger]: http://danger.systems/js/
 
-
-Usage
------
+## Usage
 
 ```js
 const { danger, fail, message, warn } = require('danger')
@@ -73,9 +70,7 @@ values.
 Invoke the callback with an object containing matched files before returning
 the usual boolean values.
 
-
-Installation
-------------
+## Installation
 
 Requires Node 8+.
 
@@ -83,24 +78,18 @@ Requires Node 8+.
 npm install --save-dev chainsmoker
 ```
 
-
-Contribute
-----------
+## Contribute
 
 - Issue Tracker: https://github.com/paulmelnikow/chainsmoker/issues
 - Source Code: https://github.com/paulmelnikow/chainsmoker
 
 Pull requests welcome!
 
-
-Support
--------
+## Support
 
 If you are having issues, please let me know.
 
-
-The name :smoking:
-------------------
+## The name :smoking:
 
 The name was inspired by the idea of a chainable file-set object using
 minimatch. It's also for Danger… maybe that was part of the inspiration.
@@ -108,8 +97,6 @@ minimatch. It's also for Danger… maybe that was part of the inspiration.
 I ended up with something simpler that doesn't rely on chaining, though I kept
 the name.
 
-
-License
--------
+## License
 
 The project is licensed under the MIT license.
