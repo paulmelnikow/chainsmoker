@@ -1,18 +1,16 @@
 {
   "name": "chainsmoker",
-  "description": "Boolean minimatch for lists of file paths, designed for Danger",
+  "version": "1.0.0",
+  "description": "Helpful, elegant, generically typed, boolean micromatch for lists of file paths",
   "author": "Paul Melnikow",
   "keywords": [
     "minimatch",
-    "chained",
-    "chain",
-    "path",
-    "matching",
-    "danger",
-    "danger-js",
-    "dangerfile"
+    "micromatch",
+    "path-matching",
+    "filematch",
+    "keyed-paths",
+    "typescript"
   ],
-  "version": "0.1.0",
   "license": "MIT",
   "repository": "paulmelnikow/chainsmoker",
   "scripts": {

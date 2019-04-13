@@ -2,6 +2,7 @@
 
 [![version](https://img.shields.io/npm/v/chainsmoker.svg?style=flat-square)][npm]
 [![license](https://img.shields.io/npm/l/chainsmoker.svg?style=flat-square)][npm]
+[![types](https://img.shields.io/npm/types/chainsmoker.svg?style=flat-square)][npm]
 [![build](https://img.shields.io/circleci/project/github/paulmelnikow/chainsmoker.svg?style=flat-square)][build]
 [![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)][prettier]
 
@@ -10,13 +11,13 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Helpful and elegant boolean [micromatch][] for lists of file paths in
-TypeScript.
+Helpful, elegant, generically typed, boolean [micromatch][] for lists of file
+paths in TypeScript.
 
-Safer and more concise than using `.filter()` and `.length`.
-
-Designed for concise syntax in [dangerfiles][danger] but not tied to them in
-any way.
+- Works with CommonJS and ES Modules, too.
+- Safer and more concise than using `.filter()` and `.length`.
+- Designed for concise syntax in [dangerfiles][danger] but not tied to them in
+  any way.
 
 I'm pleased to say as of [Danger.js 7.1][danger], this helper is vendored into
 Danger and accessible as `danger.fileMatch`.
