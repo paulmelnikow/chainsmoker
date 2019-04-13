@@ -10,13 +10,16 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Boolean [micromatch][] for lists of file paths in TypeScript.
+Helpful and elegant boolean [micromatch][] for lists of file paths in
+TypeScript.
 
 Safer and more concise than using `.filter()` and `.length`.
 
-Designed for concise syntax in [dangerfiles][danger] and available in
-Danger.js 7.1.0+. However this is generically typed, and not tied to Danger in
+Designed for concise syntax in [dangerfiles][danger] but not tied to them in
 any way.
+
+I'm pleased to say as of [Danger.js 7.1][danger], this helper is vendored into
+Danger and accessible as `danger.fileMatch`.
 
 [micromatch]: https://github.com/micromatch/micromatch
 [danger]: http://danger.systems/js/
