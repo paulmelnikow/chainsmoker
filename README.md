@@ -96,6 +96,12 @@ minimatch. It's also for Danger… maybe that was part of the inspiration.
 I ended up with something simpler that doesn't rely on chaining, though I kept
 the name.
 
+## Acknowledgements
+
+Thanks to [@orta][] for reviewing this, and shipping it with Danger.
+
+[@orta]: http://github.com/orta
+
 ## License
 
 The project is licensed under the MIT license.
