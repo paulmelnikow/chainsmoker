@@ -61,15 +61,10 @@ if (helpers.created && !helperTests.created) {
 }
 ```
 
-**fileMatch.debug(...patterns)**
+**fileMatch.getKeyedPatterns()**
 
-Log an object containing matched files before returning the usual boolean
-values.
-
-**fileMatch.tap(callback)(...patterns)**
-
-Invoke the callback with an object containing matched files before returning
-the usual boolean values.
+Return an object containing arrays of matched files instead of the usual
+boolean values.
 
 ## Installation
 
