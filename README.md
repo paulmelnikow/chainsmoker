@@ -10,14 +10,18 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Boolean [minimatch][] for lists of file paths.
+Helpful and elegant boolean [micromatch][] for lists of file paths in
+TypeScript.
 
 Safer and more concise than using `.filter()` and `.length`.
 
 Designed for concise syntax in [dangerfiles][danger] but not tied to them in
 any way.
 
-[minimatch]: https://github.com/isaacs/minimatch
+I'm pleased to say as of [Danger.js 7.1][danger], this helper is vendored into
+Danger and accessible as `danger.fileMatch`.
+
+[micromatch]: https://github.com/micromatch/micromatch
 [danger]: http://danger.systems/js/
 
 ## Usage
@@ -30,7 +34,7 @@ const chainsmoker = require('chainsmoker')
 const fileMatch = chainsmoker({
   created: danger.git.created_files,
   modified: danger.git.modified_files,
-  createdOrModified: danger.git.modified_files.concat(danger.git.created_files),
+  updated: danger.git.modified_files.concat(danger.git.created_files),
   deleted: danger.git.deleted_files,
 })
 
@@ -45,7 +49,7 @@ const helpers = fileMatch('lib/**/*.js', '!**.spec.js')
 const helperTests = fileMatch('lib/**/*.spec.js')
 
 // This is `true` whenever there are matches in the corresponding path array.
-if (documentation.createdOrModified) {
+if (documentation.updated) {
   message('We :heart: our [documentarians](http://www.writethedocs.org/)!')
 }
 
@@ -55,20 +59,15 @@ if (packageJson.modified && !packageLock.modified) {
 
 if (helpers.created && !helperTests.created) {
   warn('This PR added helper modules in lib/ but not accompanying tests.')
-} else if (helpers.createdOrModified && !helperTests.createdOrModified) {
+} else if (helpers.updated && !helperTests.updated) {
   warn('This PR modified helper modules in lib/ but not accompanying tests.')
 }
 ```
 
-**fileMatch.debug(...patterns)**
+**fileMatch.getKeyedPatterns()**
 
-Log an object containing matched files before returning the usual boolean
-values.
-
-**fileMatch.tap(callback)(...patterns)**
-
-Invoke the callback with an object containing matched files before returning
-the usual boolean values.
+Return an object containing arrays of matched files instead of the usual
+boolean values.
 
 ## Installation
 
@@ -96,6 +95,12 @@ minimatch. It's also for Danger… maybe that was part of the inspiration.
 
 I ended up with something simpler that doesn't rely on chaining, though I kept
 the name.
+
+## Acknowledgements
+
+Thanks to [@orta][] for reviewing this and shipping it with Danger.
+
+[@orta]: http://github.com/orta
 
 ## License
 

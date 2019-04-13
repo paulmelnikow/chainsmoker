@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["es2017"]
+  },
+  "include": ["*"],
+  "exclude": ["*spec.js"]
+}

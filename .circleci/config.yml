@@ -24,7 +24,7 @@ jobs:
 
       - run:
           name: Run tests
-          command: npm run test:js
+          command: npm run unit
 
       - run:
           name: Check lint
