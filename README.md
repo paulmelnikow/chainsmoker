@@ -98,7 +98,7 @@ the name.
 
 ## Acknowledgements
 
-Thanks to [@orta][] for reviewing this, and shipping it with Danger.
+Thanks to [@orta][] for reviewing this and shipping it with Danger.
 
 [@orta]: http://github.com/orta
 
