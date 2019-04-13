@@ -1,5 +1,6 @@
 {
   "name": "chainsmoker",
+  "version": "1.0.0",
   "description": "Boolean minimatch for lists of file paths, designed for Danger",
   "author": "Paul Melnikow",
   "keywords": [
@@ -12,7 +13,6 @@
     "danger-js",
     "dangerfile"
   ],
-  "version": "0.1.0",
   "license": "MIT",
   "repository": "paulmelnikow/chainsmoker",
   "scripts": {
