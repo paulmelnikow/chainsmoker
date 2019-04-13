@@ -1,41 +1,29 @@
 env:
-  mocha: true
-
-plugins:
-  - "mocha"
+  jest: true
 
 extends:
-  - "standard"
-  - "prettier"
+  - standard
+  - 'plugin:@typescript-eslint/recommended'
+  - prettier
+  - 'prettier/@typescript-eslint'
 
-parserOptions:
-  # Override eslint-config-standard, which incorrectly sets this to "module",
-  # though that setting is only for ES6 modules, not CommonJS modules.
-  sourceType: "script"
+parser: '@typescript-eslint/parser'
 
 rules:
-  # Disable some rules from eslint:recommended.
-  no-empty: ["error", { "allowEmptyCatch": true }]
-  # Allow unused parameters. In callbacks, removing them seems to obscure
-  # what the functions are doing.
-  no-unused-vars: ["error", {"args": "none"}]
-
   # We keep whitespace cleaned up.
-  no-trailing-spaces: "error"
-  eol-last: "error"
+  no-trailing-spaces: 'error'
+  eol-last: 'error'
+
+  # Argh.
+  '@typescript-eslint/explicit-function-return-type': 'off'
+  '@typescript-eslint/no-object-literal-type-assertion': 'off'
 
   # These are not disabled by eslint-config-prettier
-  spaced-comment: "off"
-  standard/object-curly-even-spacing: "off"
-  one-var: "off"
+  spaced-comment: 'off'
+  standard/object-curly-even-spacing: 'off'
+  one-var: 'off'
 
   # Our additions.
-  no-var: "error"
-  prefer-const: "error"
-  strict: "error"
-  no-console: "error"
-
-  # Mocha.
-  "mocha/handle-done-callback": "error"
-  "mocha/no-global-tests": "error"
-  "mocha/no-mocha-arrows": "error"
+  no-var: 'error'
+  prefer-const: 'error'
+  no-console: 'error'
