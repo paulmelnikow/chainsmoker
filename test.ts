@@ -1,4 +1,4 @@
-import chainsmoker, { _MatchResult } from '../chainsmoker'
+import chainsmoker, { _MatchResult } from './chainsmoker'
 
 describe('chainsmoker', () => {
   const keyedPaths = {
