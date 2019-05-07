@@ -58,8 +58,8 @@
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
-  "source": "index.ts",
-  "types": "dist/index.d.ts",
+  "source": "chainsmoker.ts",
+  "types": "dist/chainsmoker.d.ts",
   "files": [
     "dist/index*"
   ]
