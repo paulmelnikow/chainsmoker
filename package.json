@@ -34,7 +34,7 @@
     "@types/micromatch": "^4.0.1",
     "@typescript-eslint/eslint-plugin": "^1.6.0",
     "@typescript-eslint/parser": "^1.6.0",
-    "eslint": "^6.0.1",
+    "eslint": "^7.6.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-config-standard": "^14.0.1",
     "eslint-plugin-import": "^2.8.0",
