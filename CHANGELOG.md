@@ -1,6 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## 1.0.2
+
+- Update build dependencies.
 
 ## 1.0.1
 
