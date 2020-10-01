@@ -22,6 +22,7 @@
     "test": "run-p --silent --continue-on-error lint unit prettier:check",
     "prebuild": "rimraf dist/",
     "build": "microbundle",
+    "prepare": "npm run build",
     "dev": "microbundle watch"
   },
   "dependencies": {
