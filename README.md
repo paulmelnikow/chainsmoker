@@ -11,8 +11,8 @@
 [prettier]: https://prettier.io/
 [lerna]: https://lernajs.io/
 
-Helpful, elegant, generically typed, boolean [micromatch][] for lists of file
-paths in TypeScript.
+Elegant, generically typed, boolean [micromatch][] for lists of file paths in
+TypeScript.
 
 - Works with CommonJS and ES Modules, too.
 - Safer and more concise than using `.filter()` and `.length`.
