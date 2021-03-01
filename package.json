@@ -1,6 +1,6 @@
 {
   "name": "chainsmoker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Elegant, generically typed, boolean micromatch for lists of file paths",
   "author": "Paul Melnikow",
   "keywords": [
